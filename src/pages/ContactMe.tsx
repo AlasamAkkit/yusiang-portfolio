@@ -1,9 +1,11 @@
 import { TextField, Button, Stack } from '@mui/material';
 import '../styles/pagecss/contact.css';
+import Navbar from '../components/Navbar';
 
 const ContactMe = () => {
   return (
     <div className="contact-container">
+      <Navbar />
       <h1>Contact Me</h1>
       <p>Feel free to reach out via email or connect on social media.</p>
 

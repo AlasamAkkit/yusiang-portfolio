@@ -1,0 +1,56 @@
+.about-container {
+  padding: 2rem;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero-subtitle1,
+.hero-subtitle2,
+.hero-subtitle3 {
+  font-size: 1.25rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+.about-section {
+  margin-bottom: 2.5rem;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  color: #222;
+  border-bottom: 2px solid #ddd;
+  display: inline-block;
+  padding-bottom: 0.25rem;
+}
+
+.about-section p,
+.about-section ul {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.skills-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills-list li {
+  background: #f4f4f4;
+  margin: 0.4rem 0;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  display: inline-block;
+  margin-right: 0.5rem;
+}

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import '../styles/pagecss/projects.css';
+import Navbar from '../components/Navbar';
 
 const projectData = [
   {
@@ -35,6 +36,7 @@ const projectData = [
 const Projects = () => {
   return (
     <div className="projects-container">
+      <Navbar />
       <h1 className="projects-title">My Projects</h1>
       <div className="projects-grid">
         {projectData.map((project) => (
