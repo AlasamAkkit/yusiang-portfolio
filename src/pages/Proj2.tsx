@@ -1,8 +1,13 @@
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "../styles/pagecss/proj2.css"; 
 import Navbar from "../components/Navbar";
+import { Button } from "@mui/material";
 
 const Proj2 = () => {
+  const navigate = useNavigate();
+  const handleBackClick = () => {
+    navigate("/projects");
+  }
   return (
     <div className="project-detail">
       <Navbar />
@@ -20,9 +25,9 @@ const Proj2 = () => {
 
       <p className="project-description">Check out the repository for the source code <a href="https://github.com/AlasamAkkit/reactjobs">here</a></p>
 
-      <Link to="/projects" className="back-button">
+      <Button variant="contained" color="primary" className="back-button" onClick={handleBackClick}>
         ← Back to Projects
-      </Link>
+      </Button>
     </div>
   );
 };

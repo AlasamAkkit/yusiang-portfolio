@@ -1,11 +1,13 @@
-import { Link } from "react-router-dom";
 import "../styles/pagecss/proj4.css"; 
 import Navbar from "../components/Navbar";
-import ImageList from '@mui/material/ImageList';
-import ImageListItem from '@mui/material/ImageListItem';
-import { useMediaQuery, useTheme } from "@mui/material";
+import { useMediaQuery, useTheme, Button, ImageList, ImageListItem } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 const Proj4 = () => {
+  const navigate = useNavigate();
+  const handleBackClick = () => {
+    navigate("/projects");
+  }
   const itemData = [
     {
       img: "/assets/Tasktracker1.png",
@@ -59,9 +61,9 @@ const Proj4 = () => {
         <p><a href="https://github.com/AlasamAkkit/task-tracker-backend">backend</a></p>
       </p>
 
-      <Link to="/projects" className="back-button">
+      <Button variant="contained" color="primary" className="back-button" onClick={handleBackClick}>
         ← Back to Projects
-      </Link>
+      </Button>
     </div>
   );
 };

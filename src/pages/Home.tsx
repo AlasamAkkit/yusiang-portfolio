@@ -37,7 +37,15 @@ const Home = () => {
     >
       {!started && (
         <section className="hero">
-          <h1 className="hero-title">WELCOME</h1>
+          <h1 className="hero-title">
+            <span>W</span>
+            <span>E</span>
+            <span>L</span>
+            <span>C</span>
+            <span>O</span>
+            <span>M</span>
+            <span>E</span>
+          </h1>
           <p className="hero-instruction">Click anywhere or press Enter/Space to begin</p>
         </section>
       )}

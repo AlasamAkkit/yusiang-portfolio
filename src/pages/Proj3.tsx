@@ -1,18 +1,18 @@
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "../styles/pagecss/proj3.css"; 
 import Navbar from "../components/Navbar";
+import { Button } from "@mui/material";
+
 
 const Proj3 = () => {
+  const navigate = useNavigate();
+  const handleBackClick = () => {
+    navigate("/projects");
+  }
   return (
     <div className="project-detail">
       <Navbar />
       <h1 className="project-title">Hospital Management System</h1>
-      
-      <img
-        src="/assets/hms.png" 
-        alt="HMS image"
-        className="project-image"
-      />
 
       <p className="project-description">
         Hospital Management System (HMS) is a Command Line Interface (CLI) application 
@@ -24,9 +24,9 @@ const Proj3 = () => {
 
       <p className="project-description">Check out the repository for the source code <a href="https://github.com/AlasamAkkit/SC2002-project">here</a></p>
 
-      <Link to="/projects" className="back-button">
+      <Button variant="contained" color="primary" className="back-button" onClick={handleBackClick}>
         ← Back to Projects
-      </Link>
+      </Button>
     </div>
   );
 };

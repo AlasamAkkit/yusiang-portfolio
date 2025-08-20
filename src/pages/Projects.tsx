@@ -1,6 +1,7 @@
-import { Link } from 'react-router-dom';
+import { useNavigate, type To } from 'react-router-dom';
 import '../styles/pagecss/projects.css';
 import Navbar from '../components/Navbar';
+import { Button } from '@mui/material';
 
 const projectData = [
   {
@@ -34,6 +35,10 @@ const projectData = [
 ];
 
 const Projects = () => {
+  const navigate = useNavigate();
+  const handleFindOutMore = (link: To) => {
+    navigate(link);
+  }
   return (
     <div className="projects-container">
       <Navbar />
@@ -48,9 +53,14 @@ const Projects = () => {
               className="project-image"
             />
             <p className="project-description">{project.description}</p>
-            <Link to={project.link} className="project-button">
+            <Button
+              variant="contained"
+              color="primary"
+              onClick={() => handleFindOutMore(project.link)}
+              className="project-button"
+            >
               Find Out More
-            </Link>
+            </Button>
           </div>
         ))}
       </div>

@@ -7,7 +7,7 @@ const AboutMe = () => {
     <div className="about-container">
       <Navbar />
       <section className="hero">
-        <h1 className="hero-title">Hi, I'm Yu Siang</h1>
+        <h1 className="hero-title cursor typewriter-animation">Hi, I'm Yu Siang</h1>
         <p className="hero-subtitle1">
           I'm a computer science student who is a passionate developer building modern and interactive web experiences.
         </p>

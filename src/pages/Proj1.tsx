@@ -1,8 +1,13 @@
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "../styles/pagecss/proj1.css"; 
 import Navbar from "../components/Navbar";
+import { Button } from "@mui/material";
 
 const Proj1 = () => {
+  const navigate = useNavigate();
+  const handleBackClick = () => {
+    navigate("/projects");
+  }
   return (
     <div className="project-detail">
       <Navbar />
@@ -28,9 +33,9 @@ const Proj1 = () => {
       <p><a href="https://github.com/KCCHONG1997/ecom_backend">Backend</a></p>
       <p><a href="https://github.com/KCCHONG1997/ecom_db">Database</a></p>
 
-      <Link to="/projects" className="back-button">
+      <Button variant="contained" color="primary" className="back-button" onClick={handleBackClick}>
         ← Back to Projects
-      </Link>
+      </Button>
     </div>
   );
 };

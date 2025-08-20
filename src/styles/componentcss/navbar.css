@@ -1,10 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
+html, body, #root { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box;   
+}
+
+:root { --nav-h: 64px; }
+
+body { padding-top: var(--nav-h); }
+
 .navbar {
+  position: fixed;     
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  z-index: 1000;
+  height: var(--nav-h);
+  padding: 0 1.25rem;        
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1rem;
   background-color: #1e1e1e;
   color: white;
 }
@@ -27,5 +43,5 @@
 }
 
 .nav-link:hover {
-  color: #ff6347; 
+  color: #ff6347;
 }
