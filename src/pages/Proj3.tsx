@@ -15,8 +15,14 @@ const Proj3 = () => {
       />
 
       <p className="project-description">
-        hms desc
+        Hospital Management System (HMS) is a Command Line Interface (CLI) application 
+        designed using the object-oriented SOLID design approach to simulate hospital operations.
+        Users can log in as different roles such as admin, doctor, patient to perform various tasks
       </p>
+
+      {/* gallery of images  */}
+
+      <p className="project-description">Check out the repository for the source code <a href="https://github.com/AlasamAkkit/SC2002-project">here</a></p>
 
       <Link to="/projects" className="back-button">
         ← Back to Projects

@@ -7,16 +7,18 @@ const Proj2 = () => {
     <div className="project-detail">
       <Navbar />
       <h1 className="project-title">React Jobs</h1>
-      
-      <img
-        src="/assets/reactjobs.png" 
-        alt="React Jobs image"
-        className="project-image"
-      />
 
       <p className="project-description">
-        react jobs desc
+        React Jobs is a job listing application built with React. 
+        It allows job finders to browse and apply for jobs,
+        as well as for employers to post job listings.
+        this project showcases the use of React fro building dynamic user interfaces,
+        and demonstrates the ability to handle state management and API integration.
       </p>
+
+      {/* image gallery */}
+
+      <p className="project-description">Check out the repository for the source code <a href="https://github.com/AlasamAkkit/reactjobs">here</a></p>
 
       <Link to="/projects" className="back-button">
         ← Back to Projects
