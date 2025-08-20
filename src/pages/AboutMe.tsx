@@ -22,7 +22,7 @@ const AboutMe = () => {
 
       <section className="about-section">
         <h2>Interests & Hobbies</h2>
-        <p>Outside of coding, I usually spend my time gaming, and also exercise regularly, running frequently as well as play badminton</p>
+        <p>Outside of coding, I usually spend my time gaming, gamers rise up</p>
       </section>
 
       <section className="about-section">

@@ -1,34 +1,34 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../styles/pagecss/home.css";
 
 const Home = () => {
   const [started, setStarted] = useState(false);
 
-  const begin = useCallback(() => setStarted(true), []);
-
   useEffect(() => {
     if (started) return;
     const onKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Enter" || e.key === " ") {
         e.preventDefault();
-        begin();
+        setStarted(true);
       }
     };
     window.addEventListener("keydown", onKeyDown);
     return () => window.removeEventListener("keydown", onKeyDown);
-  }, [started, begin]);
+  }, [started]);
 
   return (
     <div
       className={`home-container ${started ? "started" : ""}`}
       onClick={() => {
-        if (!started) begin();
+        if (!started) {
+          setStarted(true);
+        };
       }}
       onKeyDown={(e: React.KeyboardEvent<HTMLDivElement>) => {
         if (!started && (e.key === "Enter" || e.key === " ")) {
           e.preventDefault();
-          begin();
+          setStarted(true);
         }
       }}
       role="button"

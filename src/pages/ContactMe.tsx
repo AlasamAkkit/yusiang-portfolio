@@ -7,14 +7,14 @@ const ContactMe = () => {
     <div className="contact-container">
       <Navbar />
       <h1>Contact Me</h1>
-      <p>Feel free to reach out via email or connect on social media.</p>
+      <p>Feel free to reach out via email or connect on social media. You can leave a message here as well!</p>
 
       <div className="contact-info">
         <p>Email: <a href="mailto:yusiangchong@outlook.com">yusiangchong@outlook.com</a></p>
         <p>Phone: <a href="tel:+6581820460">+65 81820460</a></p>
         <p>
-          LinkedIn: <a href="https://linkedin.com/in/yusiangchong" target="_blank" rel="noopener noreferrer">
-            linkedin.com/in/yusiangchong
+          LinkedIn: <a href="https://www.linkedin.com/in/chong-yu-siang-050247349/" target="_blank" rel="noopener noreferrer">
+            www.linkedin.com/in/chong-yu-siang-050247349
           </a>
         </p>
         <p>
