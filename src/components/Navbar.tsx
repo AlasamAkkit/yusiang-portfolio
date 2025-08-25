@@ -1,13 +1,12 @@
 import { Link } from 'react-router-dom';
 import "../styles/componentcss/navbar.css";
-
-// to do: use mui home icon
+import HomeIcon from '@mui/icons-material/Home';
 
 const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <Link to="/" className="nav-link">Home</Link>
+        <Link to="/" className="nav-link"><HomeIcon fontSize="large"/></Link>
       </div>
       <div className="navbar-links">
         <Link to="/aboutme" className="nav-link">About Me</Link>

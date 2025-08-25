@@ -26,7 +26,7 @@ body { padding-top: var(--nav-h); }
 }
 
 .navbar-logo {
-  font-size: 1.5rem;
+  font-size: 3rem;
   font-weight: bold;
   font-family: 'Lato', sans-serif;
 }
@@ -35,6 +35,7 @@ body { padding-top: var(--nav-h); }
   display: flex;
   gap: 2rem;
   font-family: 'Lato', sans-serif;
+  font-size: 1.2rem;
 }
 
 .nav-link {
