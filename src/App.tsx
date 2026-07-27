@@ -90,12 +90,12 @@ function App() {
             <img className="profile-photo" src={profile.avatar} alt={`${profile.name} GitHub avatar`} />
             <div className="availability-card">
               <span className="status-dot" aria-hidden="true" />
-              <span>Open to internships and junior full-stack opportunities</span>
+              <span>Open to software engineering internships and graduate opportunities</span>
             </div>
             <dl className="profile-facts">
               <div>
                 <dt>Focus</dt>
-                <dd>React, TypeScript, Node.js, APIs</dd>
+                <dd>Full-stack products, APIs, AFC systems</dd>
               </div>
               <div>
                 <dt>Education</dt>
@@ -194,8 +194,8 @@ function App() {
             <article className="timeline-item education-item">
               <SchoolIcon fontSize="small" />
               <div>
-                <p>Expected May 2027</p>
-                <h3>Bachelor of Computer Science, 4.15 CGPA</h3>
+                <p>Expected Jun 2027</p>
+                <h3>Bachelor of Computing (Hons) in Computer Science, 4.15/5.00 CGPA</h3>
                 <strong>Nanyang Technological University</strong>
                 <span>Building depth in software engineering, web systems, algorithms, and data structures.</span>
               </div>
