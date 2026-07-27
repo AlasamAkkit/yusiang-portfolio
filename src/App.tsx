@@ -66,8 +66,8 @@ function App() {
       <main id="top">
         <section className="hero-section" aria-labelledby="hero-title">
           <div className="hero-copy">
-            <p className="eyebrow">NTU Computer Science undergraduate</p>
-            <h1 id="hero-title">Aspiring Full-Stack Developer building practical, maintainable web products.</h1>
+            <p className="eyebrow">Computer Science @ NTU</p>
+            <h1 id="hero-title">Full-stack developer building practical web products.</h1>
             <p className="hero-summary">{profile.intro}</p>
 
             <div className="hero-actions" aria-label="Portfolio actions">
@@ -87,10 +87,16 @@ function App() {
           </div>
 
           <aside className="hero-panel" aria-label="Profile summary">
-            <img className="profile-photo" src={profile.avatar} alt={`${profile.name} GitHub avatar`} />
+            <div className="profile-header">
+              <img className="profile-photo" src={profile.avatar} alt={`${profile.name} GitHub avatar`} />
+              <div>
+                <p className="profile-name">{profile.name}</p>
+                <p className="profile-role">Software engineer · Singapore</p>
+              </div>
+            </div>
             <div className="availability-card">
               <span className="status-dot" aria-hidden="true" />
-              <span>Open to software engineering internships and graduate opportunities</span>
+              <span>Open to internships and graduate roles</span>
             </div>
             <dl className="profile-facts">
               <div>
